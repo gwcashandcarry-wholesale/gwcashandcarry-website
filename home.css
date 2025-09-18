@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+h1 a{
+  color: white;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Menu Button */
+.menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1607082349566-1873428d7c53') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2, .hero p {
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: #ffcc00;
+  color: #222;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #222;
+  color: #ffcc00;
+}
+
+/* Categories */
+.categories {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+/* Offers */
+.offers {
+  background: #ffcc00;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.offers h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.offers p {
+  padding-bottom: 8px;
+}
+.offers a{
+  background-color: #222;
+  color: white;
+}
+.offers a:hover{
+  color: papayawhip;
+}
+/* Why Us */
+.why-us {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    display: none;
+    padding: 1rem 0;
+    border-top: 1px solid #444;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+/* Category Cards with Buttons */
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-body .btn {
+  background: #ffcc00;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card-body .btn:hover {
+  background: #222;
+  color: #ffcc00;
+}

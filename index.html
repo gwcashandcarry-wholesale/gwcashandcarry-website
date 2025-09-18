@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gw Cash & Carry</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+       <h1><a href="index.html"> Gw Cash & Carry </a></h1>
+    </div>
+    <nav>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#">Specials</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Your Wholesale Partner</h2>
+      <p>Supplying retailers with bulk Cigarettes, Candy, Beverages, Auto Supplies, and more — all under one roof.</p>
+      <a href="#" class="btn">Explore Specials</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+<!-- Categories -->
+<section class="categories">
+  <h2>Product Categories</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq2FKJVQ_W5xmbg_OnhRpSSl_dO9Y14B2qxY8YiXkLrj6_4KDLbrqBklGjHnecGXj3iHc&usqp=CAU" alt="Cigarettes" />
+      <div class="card-body">
+        <p>Cigarettes & Tobacco</p>
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="download.jpg" alt="Candy" />
+      <div class="card-body">
+        <p>Candy & Snacks</p>
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="unnamed-1.png" alt="Drinks" />
+      <div class="card-body">
+        <p>Soda & Water</p>
+        <a href="pdfs/sodaandwater_cleaned.pdf" target="_blank" class="btn">View More</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="unnamed.png" alt="Auto Products" />
+      <div class="card-body">
+        <p>Automobile Products</p>
+        <a href="#" class="btn">View More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Specials -->
+  <section class="offers">
+    <h2>Monthly Discounts</h2>
+    <p>Exclusive deals and promotions updated every month for our valued customers.</p>
+    <a href="pdfs/AUG 2025.pdf" target="_blank" class="btn">View This Month’s Deals</a>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why-us">
+    <h2>Why Shop With Us?</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3>Wide Selection</h3>
+        <p>Everything from cigarettes to auto products in every size and quantity you need.</p>
+      </div>
+      <div class="feature">
+        <h3>Wholesale Pricing</h3>
+        <p>Save big with competitive wholesale rates for retailers and businesses.</p>
+      </div>
+      <div class="feature">
+        <h3>Monthly Promotions</h3>
+        <p>Special offers and discounts every month to maximize your profits.</p>
+      </div>
+      <div class="feature">
+        <h3>Reliable Supply</h3>
+        <p>We keep stock ready to ensure you never run out of essentials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Gw Cash & Carry | Wholesale Distributor</p>
+  </footer>
+
+  <!-- JavaScript for Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

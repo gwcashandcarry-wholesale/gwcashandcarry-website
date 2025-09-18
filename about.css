@@ -1,0 +1,83 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f8f9fa; color: #333; line-height: 1.6; }
+
+/* Header (keeps your style) */
+header { background: #222; color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+header h1 { font-size: 1.5rem; }
+h1 a { color: white; text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 1rem; }
+nav a { color: #fff; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #ffcc00; }
+nav a.active { color: #ffcc00; }
+.menu-btn { background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; display: none; }
+
+/* Hero */
+.hero { background: #ffcc00; color: #222; text-align: center; padding: 3rem 1rem; }
+.hero h2 { font-size: 2rem; margin-bottom: 1rem; }
+
+/* About */
+.about { max-width: 900px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.about h2 { text-align: center; margin-bottom: 1rem; }
+
+/* Why Us */
+.why-us { text-align: center; margin: 2rem auto; }
+.why-us h2 { margin-bottom: 1rem; }
+.why-us ul { list-style: none; padding-left: 0; display: inline-block; text-align: left; }
+.why-us li { margin: 0.5rem 0; font-size: 1.1rem; padding-left: 32px; position: relative; }
+.why-us li::before { content: "✅"; position: absolute; left: 0; top: 0; transform: translateY(0); }
+
+/* Stats */
+.stats { display: flex; justify-content: center; gap: 1rem; margin: 2rem auto; max-width: 800px; flex-wrap: wrap; }
+.stat { background: #ffcc00; padding: 1rem 2rem; border-radius: 10px; font-weight: bold; text-align: center; }
+
+/* Reviews container */
+.reviews { background: #fff; padding: 2rem 1rem; margin: 2rem auto; max-width: 1200px; overflow: hidden; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+.reviews h2 { text-align: center; margin-bottom: 1rem; color: #222; }
+
+/* Marquee area */
+.review-marquee { overflow: hidden; width: 100%; }
+.review-track {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+.review-track:hover {
+    animation-play-state: paused;
+}
+@keyframes reviewScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Individual review card */
+.review {
+    flex: 0 0 300px;
+    min-width: 300px;
+    max-width: 320px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.review h3 { margin-bottom: 6px; font-size: 1rem; color:#111; }
+.stars { color: #ffcc00; margin-bottom: 8px; font-size: 1rem; }
+.review p { margin: 0 0 8px 0; color:#333; font-size: 0.95rem; }
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .review { flex: 0 0 260px; min-width: 240px; }
+}
+@media (max-width: 600px) {
+    .review { flex: 0 0 220px; min-width: 200px; }
+    .menu-btn { display: block; }
+    nav ul { flex-direction: column; background: #222; position: absolute; top: 70px; right: 0; width: 200px; display: none; padding: 1rem 0; border-top: 1px solid #444; max-height: 80vh; overflow-y: auto; z-index: 999; }
+    nav ul.show { display: flex; }
+    nav li { text-align: center; padding: 0.5rem 0; }
+}
+
+/* Footer */
+footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }

@@ -1,0 +1,8 @@
+# Tell search engines what to crawl
+User-agent: *
+Allow: /
+
+# Exclude specific directories or files if needed
+# Disallow: /pdfs/
+
+Sitemap: https://www.yourdomain.com/sitemap.xml
